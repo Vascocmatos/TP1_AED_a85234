@@ -6,22 +6,18 @@ public class Main {
     public static void main(String[] args){
         int n_args = Integer.parseInt(args[1]); //numero de argumentos
         int[] vetor = new int[n_args]; //inicializado array de argumentos
+        String nomeFicheiro = args[0]; //nome do ficheiro a ler
 
-        try {
-            BufferedReader in = new BufferedReader(new FileReader(args[0]));
+        //ler o ficheiro e guardar os valores no array
+        Leitura leitura = new Leitura();
+        vetor = leitura.ler(nomeFicheiro, n_args);
 
-            for (int i = 0; i < n_args; i++) {
-                String linha = in.readLine();       // lê uma linha do ficheiro (String)
-                vetor[i] = Integer.parseInt(linha); // converte para int e guarda
-            }  
-            System.out.println(Arrays.toString(vetor));
-            in.close();
-        } catch (IOException e) {
-            System.out.println("Erro a ler o ficheiro");
-        }
+        //ordenar o array com o algoritmo bubble sort
         BubbleSort alg = new BubbleSort();
         alg.ordenar(vetor);
         System.out.println(Arrays.toString(vetor));
+
+        //escrever o array ordenado no ficheiro de saida
     }
 }
 
