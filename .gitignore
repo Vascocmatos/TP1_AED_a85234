@@ -1,0 +1,27 @@
+# Java compiled files
+*.class
+
+# Common build output
+out/
+build/
+target/
+inputs/parte1_texto.txt
+
+
+# IDE settings
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# VS Code workspace settings (keep shared project settings if needed)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Windows/macOS clutter
+Thumbs.db
+.DS_Store
