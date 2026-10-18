@@ -5,8 +5,12 @@
 out/
 build/
 target/
-inputs/
-outputs/
+inputs/*
+!inputs/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+
 
 
 # IDE settings
