@@ -18,6 +18,14 @@ public class Main {
         System.out.println(Arrays.toString(vetor));
 
         //escrever o array ordenado no ficheiro de saida
+        String soNome = new File(args[0]).getName();   // parte1_texto.txt
+        int pos = soNome.lastIndexOf('.');
+        String base = soNome.substring(0, pos);       // até pos
+        String extensao = soNome.substring(pos);   // de pos em diante
+        String nomeSaida = "outputs/" + base + "_ordenado" + extensao;
+
+        Escrita escrita = new Escrita();
+        escrita.escrever(nomeSaida, vetor);
     }
 }
 

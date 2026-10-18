@@ -5,7 +5,8 @@
 out/
 build/
 target/
-inputs/parte1_texto.txt
+inputs/
+outputs/
 
 
 # IDE settings
