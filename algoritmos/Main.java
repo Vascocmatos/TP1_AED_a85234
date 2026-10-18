@@ -19,6 +19,10 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Erro a ler o ficheiro");
         }
+        BubbleSort alg = new BubbleSort();
+        alg.ordenar(vetor);
+        System.out.println(Arrays.toString(vetor));
     }
-
 }
+
+
