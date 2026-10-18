@@ -10,10 +10,10 @@ public class Main {
         try {
             BufferedReader in = new BufferedReader(new FileReader(args[0]));
 
-            for (int i = 0; i < n_args; i++){
-                int i_arg = i;
-                vetor[i_arg] = Integer.parseInt(args[i + 2]);
-            }   
+            for (int i = 0; i < n_args; i++) {
+                String linha = in.readLine();       // lê uma linha do ficheiro (String)
+                vetor[i] = Integer.parseInt(linha); // converte para int e guarda
+            }  
             System.out.println(Arrays.toString(vetor));
             in.close();
         } catch (IOException e) {
