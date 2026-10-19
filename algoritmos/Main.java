@@ -4,13 +4,19 @@ import java.io.*;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
+
         int n_args = Integer.parseInt(args[1]); //numero de argumentos
         int[] vetor = new int[n_args]; //inicializado array de argumentos
         String nomeFicheiro = args[0]; //nome do ficheiro a ler
 
         //ler o ficheiro e guardar os valores no array
         Leitura leitura = new Leitura();
-        vetor = leitura.ler(nomeFicheiro, n_args);
+        if (args[0].endsWith(".txt")) {
+            vetor = leitura.ler_txt(nomeFicheiro, n_args);
+        } else {
+            vetor = leitura.ler_bin(nomeFicheiro, n_args);
+        }
+
 
         //ordenar o array com o algoritmo bubble sort
         BubbleSort alg = new BubbleSort();
@@ -24,8 +30,14 @@ public class Main {
         String extensao = soNome.substring(pos);   // de pos em diante
         String nomeSaida = "outputs/" + base + "_ordenado" + extensao;
 
+        
         Escrita escrita = new Escrita();
-        escrita.escrever(nomeSaida, vetor);
+
+        if (args[0].endsWith(".txt")) {
+            escrita.escrever_txt(nomeSaida, vetor);
+        } else {
+            escrita.escrever_bin(nomeSaida, vetor);
+        }
     }
 }
 
