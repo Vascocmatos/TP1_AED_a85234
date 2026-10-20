@@ -46,7 +46,10 @@ public class Main {
         long fim = System.nanoTime(); //tempo de fim
         long duracao = fim - inicio; //tempo de execução
         System.out.println("Tempo de execução: " + duracao + " ns");
-
+        
+        //escrever o tempo de execução no ficheiro de log
+        Log log = new Log();
+        log.escrever_log("BubbleSort", duracao, n_args);
     }
 }
 
