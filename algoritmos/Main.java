@@ -4,14 +4,18 @@ import java.io.*;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
-
         long inicio = System.nanoTime(); //tempo de inicio
 
-
-        int n_args = Integer.parseInt(args[1]); //numero de argumentos
-        int[] vetor = new int[n_args]; //inicializado array de argumentos
         String nomeFicheiro = args[0]; //nome do ficheiro a ler
-        String algoritmo = args[2]; //algoritmo a utilizar
+        int n_args;
+        if (args[0].endsWith(".txt")) {
+            n_args = new algoritmos.R_W.Leitura().n_txt(nomeFicheiro); //numero de argumentos
+        } else {
+            n_args = new algoritmos.R_W.Leitura().n_bin(nomeFicheiro); //numero de argumentos
+        }
+        String algoritmo = args[1]; //algoritmo a utilizar
+        int[] vetor = new int[n_args]; //inicializado array de argumentos
+
 
         //ler o ficheiro e guardar os valores no array
         algoritmos.R_W.Leitura leitura = new algoritmos.R_W.Leitura();

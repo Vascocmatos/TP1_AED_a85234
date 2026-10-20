@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 public class Leitura {
     public int[] ler_txt(String nomeFicheiro, int n) {
-
         int[] vetor = new int[n]; //inicializado array de argumentos
 
         try (BufferedReader in = new BufferedReader(new FileReader(nomeFicheiro))) {
@@ -32,5 +31,21 @@ public class Leitura {
             System.out.println("Erro a ler o ficheiro binário");
         }
         return vetor;
+    }
+
+    public int n_txt(String nomeFicheiro) {
+        int n = 0;
+        try (BufferedReader in = new BufferedReader(new FileReader(nomeFicheiro))) {
+            while (in.readLine() != null) {
+                n++;
+            }
+        } catch (IOException e) {
+            System.out.println("Erro a ler o ficheiro: " + e);
+            System.exit(1);
+        }
+        return n;
+    }
+    public int n_bin(String nomeFicheiro) {
+        return (int) (new File(nomeFicheiro).length() / 4);
     }
 }

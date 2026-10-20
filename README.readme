@@ -4,8 +4,9 @@ Grupos de 2 alunos no máximo, defesa individualizada
 1º Trabalho: Ordenação de conjunto de Inteiros*
 
 Para correr o programa deve se correr
+javac algoritmos/main.java
 
-java algoritmos.Main (nome ficheiro a ordenar) + (tamanho ficheiro) + (algoritmo a utilizar)
+java algoritmos.Main (nome ficheiro a ordenar) + (algoritmo a utilizar)
 
 os algoritmos disponives de momento sao
 
