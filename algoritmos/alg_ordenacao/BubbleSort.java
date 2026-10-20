@@ -1,4 +1,4 @@
-package algoritmos;
+package algoritmos.alg_ordenacao;
 
 public class BubbleSort {
     public void ordenar(int[] v) 

@@ -1,4 +1,4 @@
-package algoritmos;
+package algoritmos.R_W;
 
 import java.io.*;
 import java.util.Arrays;

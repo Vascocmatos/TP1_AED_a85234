@@ -11,9 +11,10 @@ public class Main {
         int n_args = Integer.parseInt(args[1]); //numero de argumentos
         int[] vetor = new int[n_args]; //inicializado array de argumentos
         String nomeFicheiro = args[0]; //nome do ficheiro a ler
+        String algoritmo = args[2]; //algoritmo a utilizar
 
         //ler o ficheiro e guardar os valores no array
-        Leitura leitura = new Leitura();
+        algoritmos.R_W.Leitura leitura = new algoritmos.R_W.Leitura();
         if (args[0].endsWith(".txt")) {
             vetor = leitura.ler_txt(nomeFicheiro, n_args);
         } else {
@@ -21,9 +22,9 @@ public class Main {
         }
 
 
-        //ordenar o array com o algoritmo bubble sort
-        BubbleSort alg = new BubbleSort();
-        alg.ordenar(vetor);
+        //ordenar o array
+        algoritmos.alg_ordenacao.ControladorAlgoritmos controlador = new algoritmos.alg_ordenacao.ControladorAlgoritmos();
+        controlador.executarAlgoritmo(algoritmo, vetor);
         System.out.println(Arrays.toString(vetor));
 
         //escrever o array ordenado no ficheiro de saida
@@ -33,9 +34,8 @@ public class Main {
         String extensao = soNome.substring(pos);   // de pos em diante
         String nomeSaida = "outputs/" + base + "_ordenado" + extensao;
 
-        
-        Escrita escrita = new Escrita();
 
+        algoritmos.R_W.Escrita escrita = new algoritmos.R_W.Escrita();
         if (args[0].endsWith(".txt")) {
             escrita.escrever_txt(nomeSaida, vetor);
         } else {
