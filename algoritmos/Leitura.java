@@ -1,12 +1,11 @@
 package algoritmos;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 public class Leitura {
-    public int[] ler(String nomeFicheiro, int n) {
+    public int[] ler_txt(String nomeFicheiro, int n) {
+
         int[] vetor = new int[n]; //inicializado array de argumentos
 
         try (BufferedReader in = new BufferedReader(new FileReader(nomeFicheiro))) {
@@ -19,5 +18,19 @@ public class Leitura {
             System.out.println("Erro a ler o ficheiro");
         }
     return vetor;
+    }
+    public int[] ler_bin(String nomeFicheiro, int n) {
+
+        int[] vetor = new int[n]; //inicializado array de argumentos
+
+        try (DataInputStream in = new DataInputStream(new FileInputStream(nomeFicheiro))) {
+            for (int i = 0; i < n; i++) {
+                vetor[i] = in.readInt(); // lê 4 bytes, um inteiro do ficheiro binário
+            }
+            System.out.println(Arrays.toString(vetor));
+        } catch (IOException e) {
+            System.out.println("Erro a ler o ficheiro binário");
+        }
+        return vetor;
     }
 }
