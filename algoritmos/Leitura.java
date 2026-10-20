@@ -25,7 +25,7 @@ public class Leitura {
 
         try (DataInputStream in = new DataInputStream(new FileInputStream(nomeFicheiro))) {
             for (int i = 0; i < n; i++) {
-                vetor[i] = in.readInt(); // lê um inteiro do ficheiro binário
+                vetor[i] = in.readInt(); // lê 4 bytes, um inteiro do ficheiro binário
             }
             System.out.println(Arrays.toString(vetor));
         } catch (IOException e) {
