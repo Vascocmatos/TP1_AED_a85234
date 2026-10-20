@@ -49,7 +49,7 @@ public class Main {
         
         //escrever o tempo de execução no ficheiro de log
         Log log = new Log();
-        log.escrever_log("BubbleSort", duracao, n_args);
+        log.escrever_log(algoritmo, duracao, n_args);
     }
 }
 
