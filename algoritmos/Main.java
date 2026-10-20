@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
 
+        long inicio = System.nanoTime(); //tempo de inicio
+
+
         int n_args = Integer.parseInt(args[1]); //numero de argumentos
         int[] vetor = new int[n_args]; //inicializado array de argumentos
         String nomeFicheiro = args[0]; //nome do ficheiro a ler
@@ -38,6 +41,12 @@ public class Main {
         } else {
             escrita.escrever_bin(nomeSaida, vetor);
         }
+
+
+        long fim = System.nanoTime(); //tempo de fim
+        long duracao = fim - inicio; //tempo de execução
+        System.out.println("Tempo de execução: " + duracao + " ns");
+
     }
 }
 
