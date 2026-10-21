@@ -1,3 +1,35 @@
-Data: 2026-10-20T12:18:57.477719400 | algoritmo: bubblesort | número de elementos: 15 | duração: 6.7615 ms
-Data: 2026-10-20T12:19:27.333658400 | algoritmo: Quicksort | número de elementos: 21 | duração: 6.2626 ms
-Data: 2026-10-20T12:19:42.245500500 | algoritmo: Quicksort | número de elementos: 15 | duração: 7.134 ms
+Data: 2026-10-21T23:48:45.634935 | algoritmo: bubblesort | número de elementos: 5000 | duração: 55.2795 ms
+Data: 2026-10-21T23:48:47.833266 | algoritmo: bubblesort | número de elementos: 5000 | duração: 57.9102 ms
+Data: 2026-10-21T23:48:49.671914700 | algoritmo: bubblesort | número de elementos: 5000 | duração: 55.4559 ms
+Data: 2026-10-21T23:48:50.496345800 | algoritmo: bubblesort | número de elementos: 5000 | duração: 56.2025 ms
+Data: 2026-10-21T23:48:51.366222 | algoritmo: bubblesort | número de elementos: 5000 | duração: 55.9574 ms
+Data: 2026-10-21T23:48:52.520236 | algoritmo: bubblesort | número de elementos: 5000 | duração: 56.4523 ms
+Data: 2026-10-21T23:48:53.295863500 | algoritmo: bubblesort | número de elementos: 5000 | duração: 56.4884 ms
+Data: 2026-10-21T23:48:54.069963100 | algoritmo: bubblesort | número de elementos: 5000 | duração: 57.2993 ms
+Data: 2026-10-21T23:48:54.858974600 | algoritmo: bubblesort | número de elementos: 5000 | duração: 55.3715 ms
+Data: 2026-10-21T23:48:56.173520300 | algoritmo: bubblesort | número de elementos: 5000 | duração: 56.1454 ms
+Data: 2026-10-21T23:48:59.231780900 | algoritmo: insertionsort | número de elementos: 5000 | duração: 29.733 ms
+Data: 2026-10-21T23:49:00.024083300 | algoritmo: insertionsort | número de elementos: 5000 | duração: 32.4044 ms
+Data: 2026-10-21T23:49:00.898943500 | algoritmo: insertionsort | número de elementos: 5000 | duração: 32.3927 ms
+Data: 2026-10-21T23:49:01.728494500 | algoritmo: insertionsort | número de elementos: 5000 | duração: 30.4363 ms
+Data: 2026-10-21T23:49:02.546292900 | algoritmo: insertionsort | número de elementos: 5000 | duração: 31.5327 ms
+Data: 2026-10-21T23:49:03.329434200 | algoritmo: insertionsort | número de elementos: 5000 | duração: 31.3071 ms
+Data: 2026-10-21T23:49:04.082402200 | algoritmo: insertionsort | número de elementos: 5000 | duração: 30.7594 ms
+Data: 2026-10-21T23:49:04.844715900 | algoritmo: insertionsort | número de elementos: 5000 | duração: 30.7101 ms
+Data: 2026-10-21T23:49:05.594911800 | algoritmo: insertionsort | número de elementos: 5000 | duração: 30.9964 ms
+Data: 2026-10-21T23:49:06.413727900 | algoritmo: insertionsort | número de elementos: 5000 | duração: 32.6676 ms
+Data: 2026-10-21T23:49:09.453007500 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.2826 ms
+Data: 2026-10-21T23:49:10.262941900 | algoritmo: quicksort | número de elementos: 5000 | duração: 24.0834 ms
+Data: 2026-10-21T23:49:11.038846600 | algoritmo: quicksort | número de elementos: 5000 | duração: 24.5396 ms
+Data: 2026-10-21T23:49:11.764890800 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.2014 ms
+Data: 2026-10-21T23:49:12.513197300 | algoritmo: quicksort | número de elementos: 5000 | duração: 25.8696 ms
+Data: 2026-10-21T23:49:13.230108800 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.1236 ms
+Data: 2026-10-21T23:49:13.938433500 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.9539 ms
+Data: 2026-10-21T23:49:14.623456500 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.4226 ms
+Data: 2026-10-21T23:49:15.380931700 | algoritmo: quicksort | número de elementos: 5000 | duração: 23.7342 ms
+Data: 2026-10-21T23:49:16.177809700 | algoritmo: quicksort | número de elementos: 5000 | duração: 24.9391 ms
+
+
+Bubblesort: 56,26 ms
+Insertion sort: 31,29 ms
+Quicksort: 24,02 ms
