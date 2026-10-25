@@ -6,6 +6,9 @@ Grupos de 2 alunos no máximo, defesa individualizada
 
 Autor: Vasco (a85234)
 
+Repositório git: https://github.com/Vascocmatos/TP1_AED_a85234.git
+
+
 ---
 
 ## 1. Resumo
